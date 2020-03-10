@@ -1,0 +1,7 @@
+group 'ru.ctimas.clean.architecture.usecase'
+
+dependencies {
+    implementation(
+            project(":domain")
+    )
+}

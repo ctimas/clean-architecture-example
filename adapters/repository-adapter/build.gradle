@@ -1,0 +1,10 @@
+group 'ru.ctimas.clean.architecture.adapter.repositoryAdapter';
+
+dependencies {
+    implementation(
+            project(":domain"),
+            "org.springframework.data:spring-data-jpa:$springDataVersion",
+            "org.springframework.data:spring-data-commons:$springDataVersion",
+            "jakarta.persistence:jakarta.persistence-api:$jakartaPersistenceApi"
+    )
+}

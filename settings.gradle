@@ -1,0 +1,9 @@
+rootProject.name = 'clean-architect'
+include 'domain'
+include 'infrastructure'
+include 'rest-controllers'
+include 'repository-adapter'
+include 'usecase'
+
+project(':rest-controllers').projectDir = file('adapters/rest-controllers')
+project(':repository-adapter').projectDir = file('adapters/repository-adapter')

@@ -1,0 +1,11 @@
+group 'ru.ctimas.clean.architecture.adapter.rest.controller';
+
+dependencies {
+    implementation(
+            project(":domain"),
+            project(":usecase"),
+            "org.springframework:spring-webmvc:$springVersion",
+            "io.swagger:swagger-annotations:1.5.23",
+            "com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion"
+    )
+}

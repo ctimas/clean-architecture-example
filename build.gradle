@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'cz.malohlava.visteg' version '1.0.5'
+}
+
+group 'ru.ctimas.clean.architecture';
+version '1.0-SNAPSHOT'
+
+allprojects {
+    apply plugin: 'java'
+
+    sourceCompatibility = 1.11
+    targetCompatibility = 1.11
+
+    compileJava.options.encoding = 'UTF-8'
+    compileTestJava.options.encoding = 'UTF-8'
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        jcenter()
+    }
+}
+
+dependencies {
+    implementation(
+            project(':infrastructure')
+    )
+}

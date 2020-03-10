@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+spring:
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    hibernate:
+      ddl-auto: validate
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+  datasource:
+    hikari:
+      connection-timeout: 60000
+      maximum-pool-size: 1
+    url: jdbc:postgresql://localhost:5432/cleanArchitecture
+    username: cleanArchitecture
+    password: cleanArchitecture
+    driver-class-name: org.postgresql.Driver
+  flyway:
+    baseline-on-migrate: true
+    clean-disabled: true
+    enabled: true
+    url: jdbc:postgresql://localhost:5432/cleanArchitecture
+    user: cleanArchitecture
+    password: cleanArchitecture

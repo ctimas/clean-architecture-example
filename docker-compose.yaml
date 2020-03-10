@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+
+  postgres:
+    image: 'postgres:latest'
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: cleanArchitecture
+      POSTGRES_USER: cleanArchitecture
+      POSTGRES_DB: cleanArchitecture
+    ports:
+      - 5432:5432

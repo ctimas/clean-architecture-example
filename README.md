@@ -1,2 +1,4 @@
-# -clean-architecture-example
- clean architecture example
+# Пример чистой архитектуры 
+
+Реализация чистой архитектуры, пример с использованием модулей gradle 
+
